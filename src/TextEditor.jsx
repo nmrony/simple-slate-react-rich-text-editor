@@ -133,8 +133,10 @@ class TextEditor extends Component {
           <div className="notes">
             <ul>
               <li>
-                * <em>0</em> for unlimited entry. Empty lines is counted as root level node as it inserts paragraph tag
+                * <em>0</em> for unlimited entry.
               </li>
+              <li>Built on latest Slate</li>
+              <li>Supported image: <strong>jpg, jpeg, png, gif, svg</strong></li>
               <li>
                 Done in hurry, did not follow best practices. apologies{' '}
                 <span role="img" aria-label="wink">
@@ -145,7 +147,7 @@ class TextEditor extends Component {
             </ul>
           </div>
         </div>
-      </>
+      </strong>
     );
   }
 
