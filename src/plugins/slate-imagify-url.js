@@ -1,4 +1,5 @@
 import isUrl from 'is-url';
+
 export default function PasteImagify(options = {}) {
   const { insertPastedImage = 'insertPastedImage' } = options;
   const allowedImageTypes = ['jpg', 'jpeg', 'png', 'gif', 'svg'];
@@ -34,7 +35,7 @@ export default function PasteImagify(options = {}) {
           })
 
           .catch(error => {
-            window.alert(error.message);
+            console.log('error in imagify', error);
             next();
           });
         return;
