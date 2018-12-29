@@ -15,6 +15,7 @@
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.2",
     "slate": "^0.44.9",
+    "slate-paste-url-imagify": "^1.0.1",
     "slate-react": "^0.21.15",
     "styled-components": "^4.1.3"
   },

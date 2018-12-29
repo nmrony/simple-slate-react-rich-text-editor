@@ -3,12 +3,12 @@ import { isKeyHotkey } from 'is-hotkey';
 import jsonSize from 'json-size';
 import React, { Component } from 'react';
 import { Value } from 'slate';
+import PasteUrlImagify from 'slate-paste-url-imagify';
 import { Editor } from 'slate-react';
 import { Button, Icon, Image, Input, Toolbar, ToolBarButton } from './helpers/components';
-import PasteImagify from './plugins/slate-imagify-url';
 const allowedImageTypes = ['jpg', 'jpeg', 'png', 'gif', 'svg'];
 const plugin = PluginEditList();
-const plugins = [plugin, PasteImagify()];
+const plugins = [plugin, PasteUrlImagify()];
 
 const INITIAL_STATE = Value.fromJSON({
   document: {
